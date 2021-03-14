@@ -10,4 +10,35 @@
 ul, li {
   list-style: none;
 }
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.app-header {
+  width: 90%;
+  max-width: 75rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-header .app-nav {
+  width: 100%;
+  padding: 1rem;
+  text-align: right;
+}
+
+.app-header .app-nav a {
+  padding: .625rem;
+}
+
+.app-header .app-nav a:last-child {
+  margin-left: 1rem;
+}
+
+.app-header .app-nav a img {
+  width: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
