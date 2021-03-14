@@ -1,0 +1,70 @@
+.pizzas-container
+    width: 100%
+    height: 65vh
+    position: relative
+    .pizzas
+        width: 75rem
+        height: 75rem
+        position: relative
+        transform: translate(-22rem, -56.25rem) rotate(0deg)
+        transition: all $animacao
+        &.picanha
+            transform: translate(-12.5rem, -56.25rem) rotate(0deg)
+        &.vegana
+            transform: translate(-12.5rem, -56.25rem) rotate(90deg)
+        &.calabreza
+            transform: translate(-12.5rem, -56.25rem) rotate(180deg)
+        &.champion
+            transform: translate(-12.5rem, -56.25rem) rotate(270deg)
+        .pizza
+            width: 25rem
+            height: 25rem
+            position: absolute
+            top: 25rem
+            left: 25rem
+            &:nth-child(1)
+                top: 62.5rem
+            &:nth-child(2)
+                left: 62.5rem
+            &:nth-child(3)
+                top: -12.5rem
+            &:nth-child(4)
+                left: -12.5rem
+            img
+                max-width: 25rem
+
+    .pizzas-textos
+        position: absolute
+        top: 120px
+        left: 40%
+        width: 60%
+        height: 350px
+        padding: 1rem
+        overflow: hidden
+        .pizza-texto
+            position: absolute
+            top: 45px
+            left: 30px
+            h2
+                line-height: 1
+                opacity: 0
+                transition: all $animacao
+                transform: translateY(300px)
+            h3
+                opacity: 0
+                transition: all $animacao
+                transform: translateX(-500px)
+            p
+                opacity: 0
+                transition: all $animacao
+                transform: translateY(-100px)
+            &.ativo
+                h2
+                    opacity: 1
+                    transform: translateY(0px)
+                h3
+                    opacity: 1
+                    transform: translateX(0px)
+                p
+                    opacity: 1
+                    transform: translateY(0px)

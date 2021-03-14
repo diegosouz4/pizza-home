@@ -7,6 +7,31 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+h2, h3, h4 {
+  margin-bottom: .625rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 3.121rem;
+  font-weight: 300;
+}
+
+h4, p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #333533;
+}
+
 ul, li {
   list-style: none;
 }
@@ -17,7 +42,7 @@ img {
 }
 
 .app-header {
-  width: 90%;
+  width: 95%;
   max-width: 75rem;
   margin-top: 2rem;
   margin-left: auto;
@@ -40,5 +65,244 @@ img {
 
 .app-header .app-nav a img {
   width: 2rem;
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+}
+
+.pizzas-container {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+.pizzas-container .pizzas {
+  width: 75rem;
+  height: 75rem;
+  position: relative;
+  -webkit-transform: translate(-22rem, -56.25rem) rotate(0deg);
+          transform: translate(-22rem, -56.25rem) rotate(0deg);
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.pizzas-container .pizzas.picanha {
+  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(0deg);
+          transform: translate(-12.5rem, -56.25rem) rotate(0deg);
+}
+
+.pizzas-container .pizzas.vegana {
+  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(90deg);
+          transform: translate(-12.5rem, -56.25rem) rotate(90deg);
+}
+
+.pizzas-container .pizzas.calabreza {
+  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(180deg);
+          transform: translate(-12.5rem, -56.25rem) rotate(180deg);
+}
+
+.pizzas-container .pizzas.champion {
+  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(270deg);
+          transform: translate(-12.5rem, -56.25rem) rotate(270deg);
+}
+
+.pizzas-container .pizzas .pizza {
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  top: 25rem;
+  left: 25rem;
+}
+
+.pizzas-container .pizzas .pizza:nth-child(1) {
+  top: 62.5rem;
+}
+
+.pizzas-container .pizzas .pizza:nth-child(2) {
+  left: 62.5rem;
+}
+
+.pizzas-container .pizzas .pizza:nth-child(3) {
+  top: -12.5rem;
+}
+
+.pizzas-container .pizzas .pizza:nth-child(4) {
+  left: -12.5rem;
+}
+
+.pizzas-container .pizzas .pizza img {
+  max-width: 25rem;
+}
+
+.pizzas-container .pizzas-textos {
+  position: absolute;
+  top: 120px;
+  left: 40%;
+  width: 60%;
+  height: 350px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.pizzas-container .pizzas-textos .pizza-texto {
+  position: absolute;
+  top: 45px;
+  left: 30px;
+}
+
+.pizzas-container .pizzas-textos .pizza-texto h2 {
+  line-height: 1;
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+}
+
+.pizzas-container .pizzas-textos .pizza-texto h3 {
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+}
+
+.pizzas-container .pizzas-textos .pizza-texto p {
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.pizzas-container .pizzas-textos .pizza-texto.ativo h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.pizzas-container .pizzas-textos .pizza-texto.ativo h3 {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.pizzas-container .pizzas-textos .pizza-texto.ativo p {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.pizzas-nav {
+  width: 100%;
+  position: relative;
+}
+
+.pizzas-nav .pizzas-botoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.pizzas-nav .pizzas-botoes .pizza-botao {
+  margin: .625rem;
+  text-align: center;
+}
+
+.pizzas-nav .pizzas-botoes .pizza-botao a {
+  display: block;
+  padding: 1.25rem;
+  max-width: 12.5rem;
+}
+
+.pizzas-nav .pizzas-botoes .pizza-botao a img, .pizzas-nav .pizzas-botoes .pizza-botao a h4 {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.pizzas-nav .pizzas-botoes .pizza-botao a img {
+  max-width: 150px;
+  margin-bottom: .625rem;
+}
+
+.pizzas-nav .pizzas-botoes .pizza-botao a:hover h4 {
+  opacity: .1;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.pizzas-nav .pizzas-botoes .pizza-botao a:hover img {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.pizzas-nav .botao-fundo {
+  display: block;
+  width: 12.5rem;
+  height: 250px;
+  background: white;
+  -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  position: absolute;
+  top: 10px;
+  left: 178px;
+  -webkit-transition: all .75s ease-in-out;
+  transition: all .75s ease-in-out;
+}
+
+aside {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  margin-top: 200px;
+  max-height: 70vh;
+  padding: 2.5rem;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside h3 {
+  font-weight: 700;
+}
+
+aside h4 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+aside p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 27px;
 }
 /*# sourceMappingURL=style.css.map */
