@@ -12,7 +12,7 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -75,17 +75,21 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 main .container {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 70%;
 }
 
 .pizzas-container {
   width: 100%;
-  height: 65vh;
+  height: 60vh;
   position: relative;
 }
 
@@ -95,28 +99,33 @@ main .container {
   position: relative;
   -webkit-transform: translate(-22rem, -56.25rem) rotate(0deg);
           transform: translate(-22rem, -56.25rem) rotate(0deg);
+  opacity: 0;
   -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
 .pizzas-container .pizzas.picanha {
-  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(0deg);
-          transform: translate(-12.5rem, -56.25rem) rotate(0deg);
+  -webkit-transform: translate(-22rem, -56.25rem) rotate(0deg);
+          transform: translate(-22rem, -56.25rem) rotate(0deg);
+  opacity: 1;
 }
 
 .pizzas-container .pizzas.vegana {
-  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(90deg);
-          transform: translate(-12.5rem, -56.25rem) rotate(90deg);
+  -webkit-transform: translate(-22rem, -56.25rem) rotate(90deg);
+          transform: translate(-22rem, -56.25rem) rotate(90deg);
+  opacity: 1;
 }
 
 .pizzas-container .pizzas.calabreza {
-  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(180deg);
-          transform: translate(-12.5rem, -56.25rem) rotate(180deg);
+  -webkit-transform: translate(-22rem, -56.25rem) rotate(180deg);
+          transform: translate(-22rem, -56.25rem) rotate(180deg);
+  opacity: 1;
 }
 
 .pizzas-container .pizzas.champion {
-  -webkit-transform: translate(-12.5rem, -56.25rem) rotate(270deg);
-          transform: translate(-12.5rem, -56.25rem) rotate(270deg);
+  -webkit-transform: translate(-22rem, -56.25rem) rotate(270deg);
+          transform: translate(-22rem, -56.25rem) rotate(270deg);
+  opacity: 1;
 }
 
 .pizzas-container .pizzas .pizza {
@@ -239,7 +248,7 @@ main .container {
 }
 
 .pizzas-nav .pizzas-botoes .pizza-botao a img {
-  max-width: 150px;
+  max-width: 100px;
   margin-bottom: .625rem;
 }
 
@@ -270,11 +279,10 @@ main .container {
 }
 
 aside {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  margin-top: 200px;
-  max-height: 70vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 30%;
   padding: 2.5rem;
   border-radius: 25px;
   -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);

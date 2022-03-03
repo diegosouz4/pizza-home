@@ -1,21 +1,26 @@
 .pizzas-container
     width: 100%
-    height: 65vh
+    height: 60vh
     position: relative
     .pizzas
         width: 75rem
         height: 75rem
         position: relative
         transform: translate(-22rem, -56.25rem) rotate(0deg)
+        opacity: 0
         transition: all $animacao
         &.picanha
-            transform: translate(-12.5rem, -56.25rem) rotate(0deg)
+            transform: translate(-22rem, -56.25rem) rotate(0deg)
+            opacity: 1
         &.vegana
-            transform: translate(-12.5rem, -56.25rem) rotate(90deg)
+            transform: translate(-22rem, -56.25rem) rotate(90deg)
+            opacity: 1
         &.calabreza
-            transform: translate(-12.5rem, -56.25rem) rotate(180deg)
+            transform: translate(-22rem, -56.25rem) rotate(180deg)
+            opacity: 1
         &.champion
-            transform: translate(-12.5rem, -56.25rem) rotate(270deg)
+            transform: translate(-22rem, -56.25rem) rotate(270deg)
+            opacity: 1
         .pizza
             width: 25rem
             height: 25rem
